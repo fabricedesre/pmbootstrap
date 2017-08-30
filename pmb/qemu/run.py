@@ -78,7 +78,9 @@ def qemu_command(args, arch, device, img_path):
     command += ["-initrd", rootfs + "/boot/initramfs-postmarketos"]
     command += ["-append", '"' + cmdline + '"']
     command += ["-m", str(args.memory)]
-    command += ["-redir", "tcp:" + str(args.port) + "::22"]
+    command += ["-device", "e1000,netdev=net0"]
+    command += ["-netdev", "user,id=net0,hostfwd=tcp::" + str(args.port) + "-:22"]
+
 
     if deviceinfo["dtb"] != "":
         dtb_image = rootfs + "/usr/share/dtb/" + deviceinfo["dtb"] + ".dtb"
