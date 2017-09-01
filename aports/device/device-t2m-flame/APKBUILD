@@ -1,7 +1,7 @@
 pkgname=device-t2m-flame
 pkgver=1
 pkgrel=2
-pkgdesc="T2M Flame"
+pkgdesc="Mozilla Flame"
 url="https://github.com/postmarketOS"
 arch="noarch"
 license="MIT"

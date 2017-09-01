@@ -1,7 +1,7 @@
 pkgname=firmware-t2m-flame
 pkgver=1
 pkgrel=2
-pkgdesc="T2M Flame Firmware"
+pkgdesc="Mozilla Flame Firmware"
 url="https://github.com/yuvadm/mozilla-flame-firmware"
 arch="noarch"
 license="proprietary"
